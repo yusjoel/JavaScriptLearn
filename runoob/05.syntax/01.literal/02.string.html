@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>菜鸟教程(runoob.com)</title>
+</head>
+<body>
+
+<h1>字符串字面量 String Literal</h1>
+
+<p id="string1">"双引号"</p>
+<p id="string2">'单引号'</p>
+<p id="string3">"双引号里面用'单引号'"</p>
+<p id="string4">'单引号里面用"双引号"'</p>
+<p id="string5">`hello ${who}`</p>
+<p id="string6">'Escape notation: \'\"\\'</p>
+<p id="string7">long string</p>
+
+<script>
+    function myFunction()
+    {
+        document.getElementById("string1").innerHTML = "双引号";
+        document.getElementById("string2").innerHTML = '单引号' ;
+        document.getElementById("string3").innerHTML = "双引号里面用'单引号'";
+        document.getElementById("string4").innerHTML = '单引号里面用"双引号"';
+        var who = 'Template literals';
+        document.getElementById("string5").innerHTML = `hello ${who}`;
+        document.getElementById("string6").innerHTML = 'Escape notation: \'\"\\';
+        document.getElementById("string7").innerHTML = "This is a very long string which needs \
+to wrap across multiple lines because \
+otherwise my code is unreadable.";
+    }
+</script>
+<button type="button" onclick="myFunction()">转换</button>
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">MDN String</a>
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals">MDN Template literals (Template strings)</a>
+
+</body>
+</html>

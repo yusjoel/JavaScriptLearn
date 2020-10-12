@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>菜鸟教程(runoob.com)</title>
+</head>
+<body>
+
+<h1>我的第一段 JavaScript</h1>
+<p>请输入数字。如果输入值不是数字，浏览器会弹出提示框。</p>
+<input id="demo" type="text">
+<script>
+    function myFunction1() {
+        var x = document.getElementById("demo").value;
+        if (isNaN(x)) {
+            alert("不是数字");
+        } else {
+            console.log(x);
+        }
+    }
+
+    function myFunction2() {
+        var x = document.getElementById("demo").value;
+        if (isNaN(x) || x.replace(/(^\s*)|(\s*$)/g, "") == "") {
+            alert("不是数字");
+        } else {
+            console.log(x);
+        }
+    }
+</script>
+<button type="button" onclick="myFunction1()">点击这里</button>
+<button type="button" onclick="myFunction2()">点击这里</button>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>菜鸟教程(runoob.com)</title>
+</head>
+<body>
+
+<h1>数字字面量 Number Literal</h1>
+<p id="number1">3.14</p>
+<p id="number2">1001</p>
+<p id="number3">123e5</p>
+<p id="number4">123e-1</p>
+<p id="number5">0x11</p>
+<p id="number6">0b11</p>
+<p id="number7">0o11</p>
+<p id="number8">9007199254740991</p>
+<p id="number9">-12.00</p>
+
+<script>
+    function myFunction()
+    {
+        document.getElementById("number1").innerHTML = 3.14;
+        document.getElementById("number2").innerHTML = 1001;
+        document.getElementById("number3").innerHTML = 123e5;
+        document.getElementById("number4").innerHTML = 123e-1;
+        document.getElementById("number5").innerHTML = 0x11;
+        document.getElementById("number6").innerHTML = 0b11;
+        document.getElementById("number7").innerHTML = 0o11;
+        document.getElementById("number8").innerHTML = 9007199254740991;
+        document.getElementById("number9").innerHTML = -12.00;
+    }
+
+</script>
+<button type="button" onclick="myFunction()">转换</button>
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">MDN Number</a>
+
+</body>
+</html>
